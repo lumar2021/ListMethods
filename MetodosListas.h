@@ -1,33 +1,16 @@
-//
-// Created by luisa on 28/09/2022.
-//
-
 #ifndef UNTITLED2_METODOSLISTAS_H
 #define UNTITLED2_METODOSLISTAS_H
+#include "Node.h"
 
-
-class MetodosListas {
-
-
+class MetodosListas
+{
 public:
-
-    struct Node
-    {
-        int dato;
-        Node *next;
-    };
-
-    void insertarElementos(Node *&, int);
     void mostrarLista(Node *);
-    void buscarElemento(Node *, int);
-    void eliminarElemento(Node *, int);
-    void sumaPromedioPares(Node *);
-    void sumaPromedioImpares(Node *);
-    void calcularMenorLista(Node *);
-    void calcularMayorLista(Node *);
-    void mostrarRepetidos(Node *);
-    void eliminarDuplicados(Node *&);
+    void insertarLista(Node *&, int);
+    void mostrarMenor(Node *);
+    void mostrarMayor(Node *);
+    void buscar(Node *, int);
+    void promedioPares(Node *, int);
 };
 
-
-#endif //UNTITLED2_METODOSLISTAS_H
+#endif

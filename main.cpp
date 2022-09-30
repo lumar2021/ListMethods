@@ -1,29 +1,49 @@
 #include <iostream>
-#include "MetodosListas.h"
-#include<iostream>
 #include<stdlib.h>
-#include<conio.h>
+#include "MetodosListas.h"
 using namespace std;
 
-struct Node
-{
-    int dato;
-    Node *next;
-};
-
-
 int main() {
+    int opcion=0;
+    Node *cabeza=NULL;
+    MetodosListas *metodos= new MetodosListas();
+    while (true)
+    {
+        cout<<"ingrese la opcion: "<<endl;
+        cin>>opcion;
 
-    MetodosListas m;
+        if(opcion==1)
+        {
+            int input;
+            cout<<"Ingrese el numero a ingresar: "<<endl;
+            cin>>input;
+            metodos->insertarLista(cabeza, input);
+        }
+        else if(opcion==2)
+        {
+            metodos->mostrarLista(cabeza);
+        }
+        else if(opcion==3)
+        {
+            metodos->mostrarMayor(cabeza);
+        }
+        else if(opcion == 4)
+        {
+            metodos->mostrarMenor(cabeza);
+        }
+        else if(opcion==5)
+        {
+            int number;
+            cout<<"Ingrese el numero que quiere buscar: "<<endl;
+            cin>>number;
+            metodos->buscar(cabeza, number);
+        }
+        else
+        {
+            break;
+        }
 
-    Node *lista= NULL;
-    int dato;
-    char opcion;
+    }
 
-    m.sumaPromedioImpares(lista);
-
-
-
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
