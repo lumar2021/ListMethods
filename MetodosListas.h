@@ -10,7 +10,15 @@ public:
     void mostrarMenor(Node *);
     void mostrarMayor(Node *);
     void buscar(Node *, int);
-    void promedioPares(Node *, int);
+    void promedioPares(Node *);
+    void promedioImpares(Node *);
+    void eliminarElemento(Node *, int);
+    void buscarRepetidos(Node *);
+    void eliminarDuplicados(Node *);
+    void ordenarDecreciente(Node *);
+    void invertirLista(Node **);
+    void descendente(Node *);
+
 };
 
 #endif
