@@ -19,4 +19,4 @@
 ###### 10.Ordenar la lista de forma descendente
 
 ##Link del video:
-###### https://clipchamp.com/watch/PLXwhoGX1k4
+###### https://youtu.be/nUNygtLF2lk
